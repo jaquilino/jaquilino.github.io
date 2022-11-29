@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "John Aquilino Personal Blog"
+title:  "Welcome to John Aquilino's Personal Blog"
 date:   2022-11-28 17:46:22 -0600
 categories: jekyll update
 ---
