@@ -6,7 +6,6 @@
 layout: default
 ---
 
-<h1>{{ "Hello World!" | downcase }}</h1>
 <ul>
   {% for post in site.posts %}
     <li>

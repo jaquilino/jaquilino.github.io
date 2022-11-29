@@ -30,7 +30,7 @@ domain:   jaquilino.github.io
 
 # Build settings
 # theme: minima
-remote_theme: pages-themes/cayman
+remote_theme: pages-themes/hacker
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
