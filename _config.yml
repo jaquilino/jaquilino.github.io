@@ -29,7 +29,7 @@ github_username:  jaquilino
 domain:   jaquilino.github.io
 
 # Build settings
-theme: jekyll-theme-cayman
+theme: cayman
 plugins:
   - jekyll-feed
 
