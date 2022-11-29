@@ -5,3 +5,5 @@
 #layout: home
 layout: default
 ---
+
+{{ content }}
