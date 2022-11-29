@@ -29,8 +29,8 @@ github_username:  jaquilino
 domain:   jaquilino.github.io
 
 # Build settings
-# theme: minima
-remote_theme: pages-themes/merlot
+theme: primer
+# remote_theme: pages-themes/primer
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
