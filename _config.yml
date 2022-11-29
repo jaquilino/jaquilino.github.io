@@ -29,11 +29,11 @@ github_username:  jaquilino
 domain:   jaquilino.github.io
 
 # Build settings
-#theme: minima
+theme: minima
+#remote_theme: pages-themes/architect
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
-remote_theme: pages-themes/architect
 
 # Exclude from processing.
 # The following items will not be processed, by default.
