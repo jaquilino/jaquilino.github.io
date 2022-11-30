@@ -14,3 +14,7 @@ layout: home
   {% endfor %}
 </ul>
 
+<div class="footer border-top border-gray-light mt-5 pt-3 text-right text-gray">
+        This site has a footer...
+</div>
+
