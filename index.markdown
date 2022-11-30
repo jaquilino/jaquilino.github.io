@@ -10,6 +10,7 @@ layout: home
   {% for post in site.posts %}
     <li>
       <a href="{{ post.url }}">{{ post.title }}</a>
+      <br />{{ post.excerpt | strip_html | truncatewords:75 }}
       <br />Posted <span>{{ post.date | date_to_string }}</span>
     </li>
   {% endfor %}
