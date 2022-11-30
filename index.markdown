@@ -10,8 +10,8 @@ layout: home
   {% for post in site.posts %}
     <li>
       <a href="{{ post.url }}">{{ post.title }}</a>
-      <br />
-      <p>Posted <span>{{ post.date | date_to_string }}</span></p>
+      <br />{{ post.extract }}
+      <br />Posted <span>{{ post.date | date_to_string }}</span>
     </li>
   {% endfor %}
 </ul>
