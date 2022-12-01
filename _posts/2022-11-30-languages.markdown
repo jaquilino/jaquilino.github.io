@@ -23,3 +23,10 @@ of a failure to communicate.
 I contend that humanity needs not language **preservation**,
 but language **consolidation**.
 Endangered languages should be allowed to die out.
+
+A small number of languages have become widely used.
+The 23 highest ranked languages in terms of the number of speakers
+are spoken by more than half of all of humanity.[1](https://www.ethnologue.com/guides/how-many-languages)
+Eight of the top 10 are spoken natively across multiple nations.
+Why have these 8 come to be so widely used?
+They are the languages of empires.
