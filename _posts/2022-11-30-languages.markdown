@@ -5,14 +5,14 @@ date:   2022-11-30 17:46:22 -0600
 categories: languages
 ---
 
-There are between 3000 and 7000 separate languages spoken on planet Earth.[1](https://www.ethnologue.com/guides/how-many-languages)
+There are between 3000 and 7000 separate languages spoken on planet Earth. [1](https://www.ethnologue.com/guides/how-many-languages)
 Over 40% of the world's languages are considered _endangered_
 and at risk of dying out.
 A language is considered endangered when it has fewer than 1000 speakers,
 and is no longer being taught to children.
 There are initiatives around the world to preserve
-these languages, both public[2](https://unesdoc.unesco.org/ark:/48223/pf0000192416) and
-private[3](https://www.endangeredlanguages.com/) [4](https://livingtongues.org/).
+these languages, both public [2](https://unesdoc.unesco.org/ark:/48223/pf0000192416) and
+private [3](https://www.endangeredlanguages.com/) [4](https://livingtongues.org/).
 I have to ask:
 			
 Why?
