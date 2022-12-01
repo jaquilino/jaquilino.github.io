@@ -17,7 +17,8 @@ layout: home
 </ul>
 
 <div class="footer border-top border-gray-light mt-5 pt-3 text-gray">
-   <p>All rights reserved</p>
+   <p>All posts appering here are the opinions of the author (that would be me).
+   All rights reserved</p>
    <p><a href="/about/">About this page</a></p>
 </div>
 
