@@ -16,10 +16,3 @@ layout: home
   {% endfor %}
 </ul>
 
-<div class="footer border-top border-gray-light mt-5 pt-3 text-gray">
-   <p>All posts appearing here are the opinions of the author (that would be me).
-   All rights reserved</p>
-   <p><a href="/about/">About this page</a></p>
-   <p><a href="mailto:{{ site.email }}">Contact the author</a></p>
-</div>
-

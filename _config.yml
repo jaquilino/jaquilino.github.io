@@ -30,7 +30,8 @@ domain:   jaquilino.github.io
 
 # Build settings
 # theme: minima
-remote_theme: pages-themes/primer
+# remote_theme: pages-themes/primer
+remote_theme: pages-themes/cayman
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
