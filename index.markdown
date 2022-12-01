@@ -20,6 +20,6 @@ layout: home
    <p>All posts appering here are the opinions of the author (that would be me).
    All rights reserved</p>
    <p><a href="/about/">About this page</a></p>
-   <p>[Contact the author](mailto:{{ site.email }})</p>
+   <p><a href="mailto:{{ site.email }}">Contact the author</a></p>
 </div>
 
