@@ -12,7 +12,7 @@ A language is considered endangered when it has fewer than 1000 speakers,
 and is no longer being taught to children.
 There are initiatives around the world to preserve
 these languages, both public [2](https://unesdoc.unesco.org/ark:/48223/pf0000192416) and
-private [3](https://www.endangeredlanguages.com/) [4](https://livingtongues.org/).
+private [3](https://www.endangeredlanguages.com/){:target="_blank"} [4](https://livingtongues.org/){:target="_blank"}.
 I have to ask:
 			
 Why?
