@@ -39,7 +39,7 @@ Eight of the top 10 are spoken natively across multiple nations.
 Why have these 8 come to be so widely used?
 They are the languages of empires.
 The most widely spoken languages have become dominant through what are now considered reprehensible means&#8212;using military dominance
-to prevent teaching of native languages snf/or to force the teaching of the dominant one,
+to prevent teaching of native languages and/or to force the teaching of the dominant one,
 using the dominance of the political system to enforce use of the dominant language,
 enforcing laws to prevent the use of a native language, etc.
 The retrospective judgment that these practices were, at best, incorrect and in the modern age considered reprehensible
@@ -49,6 +49,6 @@ This is not to advocate the continued use or the re-introduction of these measur
 The issue is whether humanity benefits from multiple thousands of languages.
 It has been estimated that 96% of the world's least spoken languages are spoken by only 3% of humanity.[5](https://www.un.org/development/desa/indigenouspeoples/wp-content/uploads/sites/19/2018/04/Indigenous-Languages.pdf){:target="_blank"}
 We advocate for the ceasing of attempts to preserve endangered languages,
-except perhaps under curated circumstances, such as museums or other historical preservation mechanisms.
+except perhaps under curated circumstances, such as through the use of museums or other historical preservation mechanisms.
 Perhaps humanity starts by concentrating on the most 500 or 1000 commonly spoken languages.
 Endangered languages should be allowed to die out.
