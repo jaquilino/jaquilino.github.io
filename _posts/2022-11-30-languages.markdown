@@ -25,7 +25,7 @@ but language **consolidation**.
 The myth/legend of the Tower of Babel from the Judeo-Christian tradition is instructive here.
 In this story, early humanity shared a common language, and strove as a community
 to construct a tower to reach to the heavens.
-This led to the supernatural authority (referred to as "the Lord") said
+This led to the supernatural authority (referred to as "the Lord") saying
 "Come, let us go down and confuse their languages there, so that they will not understand one another's speech".
 (It's not clear who the Lord is speaking to in this context.)
 This was the foundational myth within the Judeo-Christian tradition to explain
