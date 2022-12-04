@@ -215,7 +215,8 @@ pre code.hljs {
 */
 .page-content {
 	// Remove this to make header scrollable again
-	margin-top: 66px;
+	// margin-top: 66px;
+	margin-top: 0px;
 	.wrapper {
 		@include outer-container;
 		padding: 1em;
@@ -227,15 +228,18 @@ pre code.hljs {
 		padding-top: 1em !important;
 		@extend %default-ul;
 	}
+
 	.post-meta {
 		@include outer-container;
 		// padding: 1em 0;
 		color: $medium-gray;
+
 		.post-date {
 			@include span-columns(6);
 			text-align: left;
 			font-size: 0.9em;
 		}
+
 		.post-categories {
 			@include span-columns(6);
 			margin-right: 0;
@@ -243,31 +247,38 @@ pre code.hljs {
 			font-size: 0.9em;
 		}
 	}
+
 	.pagination {
 		padding-top: 2em;
 		text-align: center;
 		color: $medium-gray;
+
 		.page-number {
 			padding: 0 1em;
 		}
-    a.newer-posts {
-      text-decoration: none;
-    }
+
+		a.newer-posts {
+			text-decoration: none;
+		}
 	}
+
 	.site-header-container {
 		color: $white;
 		text-shadow: 0 2px 1px rgba(0,0,0,0.33);
 		background-color: $highlight-color;
-		.site-header{
+
+		.site-header {
 			.title {
 				font-size: modular-scale(6);
 			}
+
 			.subtitle {
 				font-style: italic;
 				font-size: modular-scale(1);
 			}
 		}
 	}
+
 	img {
 		display: block;
 		margin: auto;
@@ -280,56 +291,69 @@ pre code.hljs {
 		ul {
 			margin-bottom: 1em;
 		}
+
 		.post-header-container {
 			.scrim {
 				padding: 2em 1em 1em 1em;
 			}
 		}
+
 		.post-meta {
 			padding-bottom: 1em;
 		}
+
 		.post-content {
 			padding: 1em 0;
 		}
+
 		.tags {
 			font-size: 0.9em;
 		}
+
 		.rss {
 			margin: 1em 0 0 0;
 			@include span-columns(12);
+
 			@include media ($tablet) {
 				margin: 1em 0;
 				@include span-columns(6);
 			}
 		}
+
 		.share {
 			font-weight: bold;
 			margin: 0 0 1em 0;
 			@include span-columns(12);
+
 			@include media ($tablet) {
 				@include span-columns(6);
 				margin: 1em 0;
 				text-align: right;
 			}
+
 			a {
 				width: 1em;
 				padding: 0 0.25em;
 				text-decoration: none;
 			}
 		}
+
 		.disqus {
 			@include span-columns(12);
 		}
+
 		.post-navigation {
 			font-size: 0.9em;
 			display: block;
 			width: auto;
+
 			.prev-post {
 				display: block;
 				width: 50%;
 				float: left;
 				margin: 1em 0;
 			}
+
 			.next-post {
 				display: block;
 				width: 50%;
@@ -347,24 +371,29 @@ pre code.hljs {
 			padding: 0.5em 1em 1em 1em;
 			text-align: center;
 		}
+
 		.posts-list {
 			@extend %default-ul;
+
 			li {
 				padding: modular-scale(-4);
 				padding-left: 0;
 			}
+
 			.desc {
 				font-size: 0.9em;
 			}
+
 			.post-date {
 				color: $medium-gray;
 			}
 		}
+
 		.profile {
 			max-width: 320px;
 			margin: auto;
 			padding-bottom: 0.5em;
- 		}
+		}
 	}
 }
 
