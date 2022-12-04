@@ -29,7 +29,7 @@ github_username:  jaquilino
 domain:   jaquilino.github.io
 
 # Build settings
-# theme: minima
+theme: minima
 # remote_theme: pages-themes/primer
 # remote_theme: bencentra/centrarium
 # remote_theme: pages-themes/slate
