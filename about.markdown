@@ -11,16 +11,10 @@ Along the way becoming experienced at C++, Java, Perl, Python, and Javascript.
 
 This "blog" just contains a random set of observations and opinions with no specific theme.
 
+It does, however, use a typographical theme.
+It leverages the theme titled **centratrium** by Ben Centra.
+I probably did it wrong, but retrieving the theme from its repository, and
+just copying the files into my own repository, but there it is.
+Tried to make it work as a remote_theme, but I seemed to have made one or more mistakes.
+The source repository can be found at [Centratrium](https://github.com/bencentra/centrarium).
 
-<!--
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
-  -->
