@@ -1,5 +1,6 @@
 ---
 layout: default
+sharing: false
 ---
 <div class="post">
 
@@ -45,6 +46,7 @@ layout: default
   <p class="rss-subscribe text"><strong>Subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></strong></p>
 </section>
 
+{% sharing == true %}
 <section class="share">
   <span>Share: </span>
   {% for social in site.social %}
@@ -91,6 +93,7 @@ layout: default
     {% endif %}
   {% endfor %}
 </section>
+{% endif %}
 {% if site.inter_post_navigation == true %}
 	<section class="post-navigation">
 		<span class="prev-post">
