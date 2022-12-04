@@ -14,6 +14,8 @@ Humanity actually demonstrates a remarkably small amount of genetic variation.
 It is currently estimated that all of humanity is descended from
 a population of 1,000 to 10,000 breeding pairs, a population
 of about the size of Monaco or San Marino.
+From this small population descends every single human being on planet Earth.
+We are all one people.
 
 We have come to classify individuals by the color of their skin,
 referring to these classes as _race_.
