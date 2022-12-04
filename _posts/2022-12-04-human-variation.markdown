@@ -26,16 +26,16 @@ can produce children.
 We refer to these children as 'mixed race'.
 But this makes no more sense than classifying people by the color of their eyes.
 
-## A digression on male vs female
+### A digression on male vs female
 So one may ask whether this same applies to a person's sex?
 Genetically, one can clearly distinguish between a male and a female,
-based on whether the 23rd chromosome contains short (a Y chromosome) or a long (an X chromosome) component.
-A chromosome always consists of a pair, one is always an X, the difference is in the other member of the pair.
+based on whether the 23rd chromosome contains a short (a Y chromosome) or a long (an X chromosome) component.
+A chromosome always consists of a pair, in the 23rd one element of the pair is always an X, the difference is in the other member.
 When a person has an X paired with a Y, they are a male.
 when a person has two X, they are a female.
 When they are combined biologically, (to produce a child), there is no mixing,
 the resulting child will have a 23rd chromosome that is either XX (a female) or XY (a male).
-These are definitions.
+These are scientific definitions.
 (OK, I realize the term _combined biologically_ is an odd way of putting it.)
 
 There are a small percentage of humans that have genetic abnormalites.
