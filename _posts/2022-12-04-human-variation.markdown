@@ -22,4 +22,4 @@ There is no justification for separating people in this way,
 as evidenced by the ease with which individuals of differing skin coloration
 can produce children.
 We refer to these children as 'mixed race'.
-But this makes no more sense than separating people by the color of their eyes.
+But this makes no more sense than classifying people by the color of their eyes.
