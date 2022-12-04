@@ -19,6 +19,7 @@
 # in the templates via {{ site.myvariable }}.
 
 title: John Aquilino
+subtitle:  Random thoughts
 email: jpaquilino@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Personal blog of John Aquilino
@@ -28,11 +29,11 @@ url: "https://jaquilino.github.io/" # the base hostname & protocol for your site
 github_username:  jaquilino
 domain:   jaquilino.github.io
 cover: "/assets/header_image.jpg"
-logo: "/assets/logo.png"
+# logo: "/assets/logo.png"
 
 
 # Build settings
-theme: minima
+# theme: minima
 # remote_theme: pages-themes/primer
 # remote_theme: bencentra/centrarium
 # remote_theme: pages-themes/slate
