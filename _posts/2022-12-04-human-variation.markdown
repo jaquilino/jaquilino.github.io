@@ -36,7 +36,8 @@ when a person has two X, they are a female.
 When they are combined biologically, (to produce a child), there is no mixing,
 the resulting child will have a 23rd chromosome that is either XX (a female) or XY (a male).
 These are scientific definitions.
-(OK, I realize the term _combined biologically_ is an odd way of putting it.)
+(OK, I realize the term _combined biologically_ is an odd way of putting it.
+We accomodate non-natural mechanisms by which children are produced, such as _in-vitro fertilization_.)
 
 There are a small percentage of humans that have genetic abnormalites.
 There has to date never been a reported occurence of a human with a YY chromosome (ref: [Karotyping](https://karyotypinghub.com/are-yy-chromosomes-possible/){:target=_blank}).
