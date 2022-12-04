@@ -22,6 +22,7 @@ Where a language is not shared, it is the very definition
 of a failure to communicate.
 I contend that humanity needs not language **preservation**,
 but language **consolidation**.
+
 The myth/legend of the Tower of Babel from the Judeo-Christian tradition is instructive here.
 In this story, early humanity shared a common language, and strove as a community
 to construct a tower to reach to the heavens.
