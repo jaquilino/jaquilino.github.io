@@ -46,7 +46,7 @@ sharing: false
   <p class="rss-subscribe text"><strong>Subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></strong></p>
 </section>
 
-{% sharing == true %}
+{% page.sharing == true %}
 <section class="share">
   <span>Share: </span>
   {% for social in site.social %}
