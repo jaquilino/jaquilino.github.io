@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Language Consolidation"
+author: "John Aquilino"
 date:   2022-11-30 17:46:22 -0600
 categories: languages
 ---
