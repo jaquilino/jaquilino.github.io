@@ -13,8 +13,8 @@ This "blog" just contains a random set of observations and opinions with no spec
 
 It does, however, use a typographical theme.
 It leverages the theme titled **centratrium** by Ben Centra.
-I probably did it wrong, but retrieving the theme from its repository, and
+I probably did it wrong, by retrieving the theme from its repository, and
 just copying the files into my own repository, but there it is.
 Tried to make it work as a remote_theme, but I seemed to have made one or more mistakes.
-The source repository can be found at [Centratrium](https://github.com/bencentra/centrarium).
+The source repository can be found at [Centratrium](https://github.com/bencentra/centrarium){:target=_blank}.
 
