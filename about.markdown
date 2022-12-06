@@ -19,6 +19,6 @@ just copying the files into my own repository, but there it is.
 Tried to make it work as a remote_theme, but I seemed to have made one or more mistakes.
 The source repository can be found at [Centratrium](https://github.com/bencentra/centrarium){:target=_blank}.
 
-The image at the top of the home page is available, at the time of this writing,
+The image at the top of the home page is available&#8212;at the time of this writing&#8212;
 at the [this link](https://pxhere.com/en/photo/870570?utm_content=shareClip&utm_medium=referral&utm_source=pxhere).
 
