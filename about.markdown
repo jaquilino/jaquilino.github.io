@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-<img src="/assets/anime-avatar.png" alt="Avatar produced by DALL-E 2" title="Avatar produced by DALL-E 2" width="128" style="width: 128px;" height="128" />
+<img src="/assets/anime-avatar.png" alt="Avatar produced by DALL-E 2" title="Avatar produced by DALL-E 2" width="128" style="width: 128px; display: inline-block;" height="128" />
 The Author of these posts is John Aquilino (hereinafter referred to as "I").
 I have been a code developer for quite some time, learning the C programming language back in 1983.
 Yes, I am coming up on my 40th year anniversary of C programming.
