@@ -1,11 +1,11 @@
 {
   "ExpandedNodes": [
     "",
+    "\\assets",
     "\\_includes",
     "\\_layouts",
-    "\\_posts",
-    "\\_sass\\base"
+    "\\_posts"
   ],
-  "SelectedNode": "\\_includes\\head.html",
+  "SelectedNode": "\\assets\\header_image.jpg",
   "PreviewInSolutionExplorer": false
 }

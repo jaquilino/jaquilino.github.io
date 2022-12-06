@@ -28,7 +28,8 @@ url: "https://jaquilino.github.io/" # the base hostname & protocol for your site
 # twitter_username: none
 github_username:  jaquilino
 domain:   jaquilino.github.io
-cover: "/assets/header_image.jpg"
+# cover: "/assets/header_image.jpg"
+cover: "https://pxhere.com/en/photo/870570?utm_content=shareClip&utm_medium=referral&utm_source=pxhere"
 # logo: "/assets/logo.png"
 
 
