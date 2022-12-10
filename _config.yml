@@ -43,11 +43,11 @@ plugins:
   - jekyll-remote-theme
 
 social:
-	- name:      Email
-	  icon:      envelope
-	  url:       mailto:?subject=Link%20to%20blog
-	  desc:      Share by email
-	  share:     true
+    - name:      Email
+      icon:      envelope
+      url:       mailto:?subject=Link%20to%20blog
+      desc:      Share by email
+      share:     true
 
 # Exclude from processing.
 # The following items will not be processed, by default.
