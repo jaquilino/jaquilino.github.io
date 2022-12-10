@@ -45,8 +45,8 @@ plugins:
 social:
     - name:      Email
       icon:      envelope
-      url:       mailto:?subject=Link%20to%20blog
       desc:      Share by email
+      url:       mailto:?subject=Link%20to%20blog
       share:     true
 
 # Exclude from processing.
