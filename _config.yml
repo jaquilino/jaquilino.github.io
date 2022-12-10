@@ -42,6 +42,13 @@ plugins:
   - jekyll-feed
   - jekyll-remote-theme
 
+social:
+	- name:      Email
+	  icon:      envelope
+	  url:       mailto:?subject=Link%20to%20blog
+	  desc:      Share by email
+	  share:     true
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

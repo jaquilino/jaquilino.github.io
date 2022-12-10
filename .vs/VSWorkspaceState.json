@@ -1,11 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\assets",
-    "\\css",
     "\\_includes",
     "\\_layouts",
     "\\_posts"
   ],
+  "SelectedNode": "\\_includes\\footer.html",
   "PreviewInSolutionExplorer": false
 }
