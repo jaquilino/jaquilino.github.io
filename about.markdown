@@ -10,6 +10,8 @@ I have been a code developer for quite some time, learning the C programming lan
 Yes, I am coming up on my 40th year anniversary of C programming.
 Along the way becoming experienced at C++, Java, Perl, Python, and Javascript.
 
+My expertise has been primarily in the area of data communications and networking.
+
 This "blog" just contains a random set of observations and opinions with no specific theme.
 
 It does, however, use a typographical theme.

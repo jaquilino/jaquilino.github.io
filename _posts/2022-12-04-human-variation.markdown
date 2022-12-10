@@ -26,6 +26,19 @@ can produce children.
 We refer to these children as 'mixed race'.
 But this makes no more sense than classifying people by the color of their eyes.
 
+Citizens of the United States refer to it as a _melting pot_,
+by which it is meant that the population is a result of the mixing
+of incoming populations, not the result of a single or a few native populations.
+This, with the reality of the ease with which humans genes which
+result in the skin color of their children, implies that eventually
+all American children will be the result of an homogenization
+of such skin color.
+As humanity migrates across the globe,
+it is inevitable that each human is the result of the mixing of all skin colors
+and other characteristics.
+Our children will eventually all be 'mixed race'.
+So why do we apply such classification today?
+
 ### A digression on male vs female
 So one may ask whether this same applies to a person's sex?
 Genetically, one can clearly distinguish between a male and a female,
