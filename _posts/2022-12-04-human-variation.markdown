@@ -7,12 +7,12 @@ categories: genomics
 
 Pick any two people on planet Earth, any two.
 Science tells us that any two randomly-chosen individuals
-vary by at most 1 out of every 1000 genes,
+vary by at most 1 out of every 1000 DNA base pairs[1](https://www.ashg.org/wp-content/uploads/2019/09/genetic-variation-essay.pdf){:target=_blank},
 meaning the average human is 99.9% the same as any one other.
 
 Humanity actually demonstrates a remarkably small amount of genetic variation.
 It is currently estimated that all of humanity is descended from
-a population of 1,000 to 10,000 breeding pairs, a population
+a population of 1,000 to 10,000 breeding pairs [2](http://news.bbc.co.uk/2/hi/science/nature/2975862.stm){:target=_blank}, a population
 of about the size of Monaco or San Marino.
 From this small population descends every single human being on planet Earth.
 We are all one people.
@@ -29,6 +29,9 @@ But this makes no more sense than classifying people by the color of their eyes.
 Citizens of the United States refer to it as a _melting pot_,
 by which it is meant that the population is a result of the mixing
 of incoming populations, not the result of a single or a few native populations.
+A melting pot is in opposition to a multi-cultural population.
+_Multi-cultural_ implies society is attempting to exist as multiple cultures, living side-by-side.
+_Melting pot_, on the other hand, refers to the eventual mixing of cultures into a single, mixed whole.
 This, with the reality of the ease with which humans genes which
 result in the skin color of their children, implies that eventually
 all American children will be the result of an homogenization
