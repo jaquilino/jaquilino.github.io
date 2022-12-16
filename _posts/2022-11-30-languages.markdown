@@ -5,14 +5,14 @@ date:   2022-11-30 17:46:22 -0600
 categories: languages
 ---
 
-There are between 3000 and 7000 separate languages spoken on planet Earth. [1](https://www.ethnologue.com/guides/how-many-languages){:target="_blank"}
+There are between 3000 and 7000 separate languages spoken on planet Earth. <sup>[1](https://www.ethnologue.com/guides/how-many-languages){:target="_blank"}</sup>
 Over 40% of the world's languages are considered _endangered_
 and at risk of dying out.
 A language is considered endangered when it has fewer than 1000 speakers,
 and is no longer being taught to children.
 There are initiatives around the world to preserve
-these languages, both public [2](https://unesdoc.unesco.org/ark:/48223/pf0000192416){:target="_blank"} and
-private [3](https://www.endangeredlanguages.com/){:target="_blank"} [4](https://livingtongues.org/){:target="_blank"}.
+these languages, both public <sup>[2](https://unesdoc.unesco.org/ark:/48223/pf0000192416){:target="_blank"}</sup> and
+private <sup>[3](https://www.endangeredlanguages.com/){:target="_blank"} [4](https://livingtongues.org/){:target="_blank"}</sup>.
 I have to ask:
 			
 Why?
@@ -37,7 +37,7 @@ The lesson of the story is that the multiplicity of languages _separated_ humani
 
 A small number of languages have become widely used.
 The 23 highest ranked languages in terms of the number of speakers
-are spoken by more than half of all of humanity.[1](https://www.ethnologue.com/guides/how-many-languages){:target="_blank"}
+are spoken by more than half of all of humanity.<sup>[1](https://www.ethnologue.com/guides/how-many-languages){:target="_blank"}</sup>
 Eight of the top 10 are spoken natively across multiple nations.
 Why have these 8 come to be so widely used?
 They are the languages of empires.
@@ -50,7 +50,7 @@ that we perceive the endangered languages are deserving preservation.
 
 This is not to advocate the continued use or the re-introduction of these measures to extend the use of current dominant languages.
 The issue is whether humanity benefits from multiple thousands of languages.
-It has been estimated that 96% of the world's least spoken languages are spoken by only 3% of humanity.[5](https://www.un.org/development/desa/indigenouspeoples/wp-content/uploads/sites/19/2018/04/Indigenous-Languages.pdf){:target="_blank"}
+It has been estimated that 96% of the world's least spoken languages are spoken by only 3% of humanity.<sup>[5](https://www.un.org/development/desa/indigenouspeoples/wp-content/uploads/sites/19/2018/04/Indigenous-Languages.pdf){:target="_blank"}</sup>
 We advocate for the ceasing of attempts to preserve endangered languages,
 except perhaps under curated circumstances, such as through the use of museums or other historical preservation mechanisms.
 Perhaps humanity starts by concentrating on the most 500 or 1000 commonly spoken languages.

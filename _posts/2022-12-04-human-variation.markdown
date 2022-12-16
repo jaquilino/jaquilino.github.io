@@ -7,12 +7,12 @@ categories: genomics
 
 Pick any two people on planet Earth, any two.
 Science tells us that any two randomly-chosen individuals
-vary by at most 1 out of every 1000 DNA base pairs <sup>[1](https://www.ashg.org/wp-content/uploads/2019/09/genetic-variation-essay.pdf){:target=_blank}</sup>,
+vary by at most 1 out of every 1000 DNA base pairs <sup>[1](https://www.ashg.org/wp-content/uploads/2019/09/genetic-variation-essay.pdf){:target="_blank"}</sup>,
 meaning the average human is 99.9% the same as any one other.
 
 Humanity actually demonstrates a remarkably small amount of genetic variation.
 It is currently estimated that all of humanity is descended from
-a population of 1,000 to 10,000 breeding pairs <sup>[2](http://news.bbc.co.uk/2/hi/science/nature/2975862.stm){:target=_blank}</sup>, a population
+a population of 1,000 to 10,000 breeding pairs <sup>[2](http://news.bbc.co.uk/2/hi/science/nature/2975862.stm){:target="_blank"}</sup>, a population
 of about the size of Monaco or San Marino.
 From this small population descends every single human being on planet Earth.
 We are all one people.
