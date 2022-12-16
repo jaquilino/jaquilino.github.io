@@ -28,7 +28,7 @@ In this story, early humanity shared a common language, and strove as a communit
 to construct a tower to reach to the heavens.
 This led to the supernatural authority (referred to as "the Lord") saying
 ```
-Come, let us go down and confuse their languages there, so that they will not understand one another's speech.
+Go to, lat us go down, and there confound their languages, that they may not understand one another's speech.
 ```
 (It's not clear who the Lord is speaking to in this context.)
 This was the foundational myth within the Judeo-Christian tradition to explain
