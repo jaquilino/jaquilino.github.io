@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Navigating DOM of datatable in Vue3"
-date:   2022-01-07 8:00:00 -0600
+date:   2023-01-07 8:00:00 -0600
 categories: javascript, vue, datatables
 ---
 
@@ -24,7 +24,7 @@ But no DOM appeared within it.
 WHat was I missing?
 Details follow.
 
-The "<template>" section of my component was:
+The "&lt;template&gt;" section of my component was:
 ```
 <template>
     <DataTable class="display nowrap" width="100%" ref="finData"
@@ -105,7 +105,7 @@ So we need to wait to apply the action to evalute the DOM
 when Vue applies the cached elements.
 To do that, one needs to over-ride the "nextTick" method of Vue.
 
-First, I need to "import" the "nextTick" method from "vue" in the "<script>" object:
+First, I need to "import" the "nextTick" method from "vue" in the "&lt;script&gt;" object:
 ```
     import { nextTick } from 'vue';
 ```
