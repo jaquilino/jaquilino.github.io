@@ -24,7 +24,7 @@ But no DOM appeared within it.
 WHat was I missing?
 Details follow.
 
-The "&lt;template&gt;" section of my component was:
+The ```&lt;template&gt;``` section of my component was:
 ```
 <template>
     <DataTable class="display nowrap" width="100%" ref="finData"
@@ -74,7 +74,7 @@ Notes: some items inside the "ajax" attribute quoted above have been removed.
 The "rowCallback" item within the "options" attribute defines a function to be invoked
 by the datatables object each time it adds a row to the table being constructed.
 The callback is expected to set a class of a selected set of cells in each row.
-The "set_columnn_class" method was inserted into the "<script>" section of the component.
+The "set_columnn_class" method was inserted into the "&lt;script&gt;" section of the component.
 ```
     export default {
         methods: {
