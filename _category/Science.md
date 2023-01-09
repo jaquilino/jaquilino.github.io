@@ -1,4 +1,4 @@
 ---
 tag: Science
-permalink: "/category/Science"
+permalink: "/posts/Science"
 ---
