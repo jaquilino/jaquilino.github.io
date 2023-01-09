@@ -2,7 +2,7 @@
 layout: post
 title:  "Navigating DOM of datatable in Vue3"
 date:   2023-01-07 8:00:00 -0600
-categories: javascript vue datatables
+categories: Tech
 ---
 
 Lately I have been applying datatables to the Vue javascript framework.

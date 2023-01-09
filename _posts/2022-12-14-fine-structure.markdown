@@ -2,7 +2,7 @@
 layout: post
 title:  "On debating the existence of God"
 date:   2022-12-14 8:00:00 -0600
-categories: religion
+categories: Science
 ---
 
 

@@ -2,7 +2,7 @@
 layout: post
 title:  "We are all one people"
 date:   2022-12-4 8:00:00 -0600
-categories: genomics
+categories: Science
 ---
 
 Pick any two people on planet Earth, any two.

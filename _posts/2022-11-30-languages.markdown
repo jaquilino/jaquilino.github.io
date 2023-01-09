@@ -2,7 +2,7 @@
 layout: post
 title:  "Language Consolidation"
 date:   2022-11-30 17:46:22 -0600
-categories: languages
+categories: Science
 ---
 
 There are between 3000 and 7000 separate languages spoken on planet Earth. <sup>[1](https://www.ethnologue.com/guides/how-many-languages){:target="_blank"}</sup>
