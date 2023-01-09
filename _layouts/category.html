@@ -3,9 +3,18 @@ layout: default
 ---
 
 <div class="blog list">
-    <h1>Filed Under <small>{{ page.tag }}</small></h1>
+
+<div class="site-header-container {% if site.cover %}has-cover{% endif %}" {% if site.cover %}style="background-image: url({{ site.cover | prepend: site.baseurl }});"{% endif %}>
+  <div class="scrim {% if site.cover %}has-cover{% endif %}">
+    <header class="site-header">
+      <h1 class="title">{{ site.title }}</h1>
+      {% if site.subtitle %}<p class="subtitle">{{ site.subtitle }}</p>{% endif %}
+    </header>
+  </div>
+</div>
 
     <div class="wrapper">
+    <h1>Filed Under <small>{{ page.tag }}</small></h1>
     {% for post in site.categories[page.tag] %}
         <h2>
             <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
