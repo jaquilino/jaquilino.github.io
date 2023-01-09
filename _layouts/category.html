@@ -14,7 +14,7 @@ layout: default
 </div>
 
     <div class="wrapper">
-    <h1>Filed Under <small>{{ page.tag }}</small></h1>
+    <h1>Posts in the <small>{{ page.tag }}</small> Category</h1>
     {% for post in site.categories[page.tag] %}
         <h2>
             <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
