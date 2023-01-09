@@ -6,6 +6,10 @@ layout: default
     <h1>Filed Under <small>#{{ page.tag }}</small></h1>
 
     {% for post in site.categories[page.tag] %}
-        {% include post_preview.html %}
+        <li>
+        <h2>
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+        </li>
     {% endfor %}
 </div>
