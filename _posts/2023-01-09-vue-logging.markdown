@@ -2,6 +2,7 @@
 layout: post
 title:  "Debug logging in Vue3"
 date:   2023-01-09 8:00:00 -0600
+categories: Tech
 ---
 
 I had an issue occurring in some Vue code I was trying to get working.
