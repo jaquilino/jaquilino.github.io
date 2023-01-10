@@ -42,7 +42,7 @@ Then each component that you want to write debug output from, you would add the 
         }
 ```
 The logMessage function declareation above is not necessary, it's just to provide an example of outputting a debug message.
-You may, of course, use a differnt variable than ```$log``` in the above, it'w what I chose to use.
+You may, of course, use a differnt variable than ```$log``` in the above, it's what I chose to use.
 
 One can also invoke the module inside of a component's ```<script setup>``` section.
 Add the following to ```<script setup>```:
