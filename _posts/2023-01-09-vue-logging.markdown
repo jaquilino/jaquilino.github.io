@@ -7,18 +7,18 @@ categories: Tech
 
 I had an issue occurring in some Vue code I was trying to get working.
 In attempting to debug the logic, I defaulted to a _brute force_ approach
-and just insert a few ```console.log``` statements in my code.
+and just inserted a few ```console.log``` statements in my code.
 Much to my surprise, the console output was reporting that the ```console``` object
 was not defined, and that therefore there was no function named ```log```.
 The reason is that Vue comparmentalizes the Javascript code within the ```script``` tag
-for the component, and that global options are hidden from it.
+for the component, and that global javascript variables are hidden from it.
 
-some of you will be quick to tell me I shouldn't rely on the use of ```console.log``' for debugging anyway,
-to prefer use of an interactive debugger such as Vue Debug.
-But I was foolishly trying to do something that I perceived as simple and strighht-forward.
+some of you will be quick to tell me I shouldn't rely on the use of ```console.log``` for debugging anyway,
+to prefer use of an interactive debugger such as [Vue.js Devtools](https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd?hl=en){:target=_blank}.
+But I was foolishly trying to do something that I perceived as simple and straight-forward.
 So how to replicate console logging in a Vue component?
 
-I turned to use of a third-party component called ```vuejs3-logger```.
+I turned to use of a third-party component called ```vuejs3-logger```[Link](https://www.npmjs.com/package/vuejs3-logger){:target=_blank}.
 (There are others, this is the one I chose.)
 First I import it into my ```main.js``` module (yours might be named differntly).
 ```
