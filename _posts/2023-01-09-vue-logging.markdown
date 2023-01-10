@@ -13,18 +13,19 @@ was not defined, and that therefore there was no function named ```log```.
 The reason is that Vue comparmentalizes the Javascript code within the ```script``` tag
 for the component, and that global javascript variables are hidden from it.
 
-some of you will be quick to tell me I shouldn't rely on the use of ```console.log``` for debugging anyway,
+Some of you will be quick to tell me I shouldn't rely on the use of ```console.log``` for debugging anyway,
 to prefer use of an interactive debugger such as [Vue.js Devtools](https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd?hl=en){:target=_blank}.
 But I was foolishly trying to do something that I perceived as simple and straight-forward.
 So how to replicate console logging in a Vue component?
 
 I turned to use of a third-party component called ```vuejs3-logger```[Link](https://www.npmjs.com/package/vuejs3-logger){:target=_blank}.
 (There are others, this is the one I chose.)
-First I import it into my ```main.js``` module (yours might be named differntly).
+First I import it into my ```main.js``` module (your bootstrap Javascript module might be named differntly).
 ```
 import VueLogger from 'vuejs3-logger';
 ```
-And then add it to the ```App``` by using ```provide``` to associate with an injectable variable
+On import, the ```vuejs3-logger``` module instantiates a global variable refered to as ```$log```.
+You then add it to the ```App``` by using ```provide``` to associate with an injectable variable
 (the following should be inserted after instantiating the app object and before mount-ing it):
 ```
 const logger = app.config.globalProperties.$log;
@@ -55,4 +56,4 @@ Add the following to ```<script setup>```:
 If your component doesn't use ```<script setup>```, there's no need to add it for logging.
 
 The ```vuejs3-logger``` module understands production building and automatically ignores calls to the debug method,
-so you don't have to warry about removing debug lines from your production build.
+so you don't have to worry about removing debug lines from your production build.
