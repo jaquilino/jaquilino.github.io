@@ -28,7 +28,7 @@ and you need to add one to it, what happens to the number
 in the computer (or more precisely, in the CPU)?
 It rolls over to 0, resetting the range.
 
-This is similar the index number representing the day of the week.
+This is similar to the index number representing the day of the week.
 The index can range in possible values
 from 0 (the beginning day of the week, often Sunday)
 to 6 (the last day of the week).
@@ -58,7 +58,7 @@ The question is:
 How does one do math operations on numbers using computers
 where the numbers exceed the limits of their registers?
 
-In encryption, for example, we will refers to **keys** that are
+In encryption, for example, we will refer to **keys** that are
 1024 or 2048 **bits** in size.
 This refers to numbers that are made up of 1024 or 2048 bits,
 where a bit is binary value, either 0 or 1.
@@ -124,7 +124,7 @@ the values of the lowest exponents appear first,
 or that the values of the highest exponents appear first.
 The former ordering is referred to as **little endian**,
 because the little end of the numbers appears first.
-The latter ordering is referred to as **big endian".
+The latter ordering is referred to as **big endian**.
 Little endian ordering can be an intuitive challenge for humans.
 With little endian, the number 2048 would be represented
 in the computer as 8402.
