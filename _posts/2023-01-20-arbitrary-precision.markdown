@@ -88,7 +88,6 @@ We when say and/or write 2048, we are saying
 Add 2000, 40 and 8 and you get 2048.
 
 ![Number 2048 in base 10](/assets/base-10-2048.png "Number 2048 in base 10")
-
 <figcaption>The number 2048 in a list of base 10 numbers</figcaption>
 
 Computers can be made to do the same thing in the same way,
