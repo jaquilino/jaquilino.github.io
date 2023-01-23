@@ -89,12 +89,14 @@ Add 2000, 40 and 8 and you get 2048.
 
 ![Number 2048 in base 10](/assets/base-10-2048.png "Number 2048 in base 10")
 
+<figcaption>The number 2048 in a list of base 10 numbers</figcaption>
+
 Computers can be made to do the same thing in the same way,
 just that instead of limiting themselves to
 a range of 0 to 9 (ie, base 10),
-they may use of a base of 2 to the power of the number of bits
+they can be made to make use of a base of 2 to the power of the number of bits
 in the width of their registers.
-As I write this, that is typically 64 bits wide,
+As I write this, that is typically 64 bits,
 so 2 raised to the power of 64, or 18.4 quintillion.
 Calculations on a 2048-bit key will break down
 into a list of 2048 divided by 64, or 32 separate numeric values.
