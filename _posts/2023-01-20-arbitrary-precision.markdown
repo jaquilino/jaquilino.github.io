@@ -88,7 +88,7 @@ We when say and/or write 2048, we are saying
 Add 2000, 40 and 8 and you get 2048.
 
 <figure class="center-caption">
-<img src="/assets/base-10-2048.png" alt="Number 2048 in base 10" title="Number 2048 in base 10"></img>
+<img src="/assets/base-10-2048.png" alt="Number 2048 in base 10" title="Number 2048 in base 10" />
 <figcaption>The number 2048 in a list of base 10 numbers</figcaption>
 </figure>
 
