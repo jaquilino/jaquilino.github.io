@@ -24,7 +24,7 @@ This function declaration contains a few assumptions
 First, the first two argument pairs require the caller to provide
 two arrays of unsigned long integers, where the length of each array
 is provided as the corresponding unsigned integer.
-These will represents our input numbers.
+These will represent our input numbers.
 The inputs will be expected to be provided as **little-endian** arrays,
 where the first element of each array is the _least significant_ value.
 The C language expects these arrays to contain unsigned long values.
@@ -79,7 +79,7 @@ a value.  It sets it to ```1``` and bits-shifts it to the left by ```1```
 repeatedly, until the action of shifting it to the left would result
 in ```carry_mask``` being set to 0, meaning it has rolled over.
 
-Why do we do this, as opposed to just seeting it to value that we
+Why do we do this, as opposed to just setting it to value that we
 would know in advance is always right, for example, by just setting
 it to ```0x80000000```?
 For portability.  The C compiler is not expected to always be in use
@@ -123,6 +123,9 @@ For each iteration of this loop, we perform this computation:
             f += ((*s1 & ~carry_mask) + (*s2 & ~carry_mask));
             s1++; s2++; n_s1--; n_s2--;
         }
+        if( f  & carry_mask ) carry++;
+        f = (f & ~carry_mask) | ((carry & 1) ? carry_mask : 0);
+        carry >>= 1;
 ```
 This computation first applies some exceptions, where we accomodate
 the possibility that we have completely applied either or both of the
@@ -178,6 +181,24 @@ of the second array:
             s2++; n_s2--;
         } else {
 ```
+
+After having computed a value for ```f```, each iteration of the loop
+then adjusts the value of ```f``` using:
+```
+        if( f  & carry_mask ) carry++;
+        f = (f & ~carry_mask) | ((carry & 1) ? carry_mask : 0);
+        carry >>= 1;
+```
+On each iteration, it tests if the computed value also has its
+high bit set.  If it does, it increments the value of ```carry``` one more time.
+Then if adjusts ```f``` depending on whether the current computed
+value of ```carry``` is an odd number (```carry & 1```).
+If it is, the high bit of ```f``` is force to be on.
+Then, ```carry``` is right-shifted by one bit, in effect
+dividing it by two (2).
+The resulting value of ```carry``` then feeds forward into the
+next iteration of the loop.
+
 So the entire algorithm forming the loop appears as follows:
 ```
     unsigned long   f;
