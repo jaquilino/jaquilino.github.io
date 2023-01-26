@@ -5,7 +5,7 @@ date:   2023-01-26 8:00:00 -0600
 categories: Tech
 ---
 
-This is a follow-on discussion of an earlier post on
+This is a follow-on discussion of an earlier [post](/tech/2023/01/20/arbitrary-precision.html){:target=_blank} on
 arbitrary precision arithmetic.
 In this post, I'm going to post some code for performing
 the addition of two unsigned integers of arbitrary length.
@@ -87,7 +87,7 @@ on a 64-bit or 32-bit environment.
 We're going to have it make this calculation the first time this
 function is invoked, and it would never need to do so again.
 
-The we loop around on all of the input numbers:
+Then we loop around on all of the input numbers:
 ```
     unsigned long   f;
 	unsigned long  *base_r = r;
