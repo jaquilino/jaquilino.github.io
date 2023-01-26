@@ -5,9 +5,9 @@ date:   2023-01-26 8:00:00 -0600
 categories: Tech
 ---
 
-This is a follow-on discussion of an earlier [post](/tech/2023/01/20/arbitrary-precision.html){:target=_blank} on
+This is a follow-on discussion of an earlier [post](/tech/2023/01/20/arbitrary-precision.html){:target="_blank"} on
 arbitrary precision arithmetic.
-In this post, I'm going to post some code for performing
+In this post, I'm going to provide some code for performing
 the addition of two unsigned integers of arbitrary length.
 This is going to feature use of the C programming language to do so.
 
