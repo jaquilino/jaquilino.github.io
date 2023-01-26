@@ -1,0 +1,209 @@
+---
+layout: post
+title:  "Arbitrary precision -- Add two unsigned in C"
+date:   2023-01-26 8:00:00 -0600
+categories: Tech
+---
+
+This is a follow-on discussion of an earlier post on
+arbitrary precision arithmetic.
+In this post, I'm going to post some code for performing
+the addition of two unsigned integers of arbitrary length.
+This is going to feature use of the C programming language to do so.
+
+We're going to start by declaring a function:
+```
+unsigned long *
+ap_addu(const unsigned long *s1, unsigned int n_s1,
+        const unsigned long *s2, unsigned int n_s2,
+        unsigned long *r,  unsigned int max_r)
+{
+}
+```
+This function declaration contains a few assumptions
+First, the first two argument pairs require the caller to provide
+two arrays of unsigned long integers, where the length of each array
+is provided as the corresponding unsigned integer.
+These will represents our input numbers.
+The inputs will be expected to be provided as **little-endian** arrays,
+where the first element of each array is the _least significant_ value.
+The C language expects these arrays to contain unsigned long values.
+In C numeric values may be either signed or unsigned.
+In this case, we are declaring our expectation that the inputs
+being provided represent unsigned values.
+We are further declaring that the arrays contain long integers.
+In C long integers will be the largest usable register width
+of the underlying compute platform.
+A 64-bit C compiler producing code for an Intel family CPU
+will map unsigned long to 64-bit values.
+
+This declaration further expects the caller to provide a
+third array, with an associated length.
+Note that this third array is not declared as ```const```.
+This means we declare the the first two arrays will be used in the computation,
+but will not be altered.
+The third array is to provide space for the output of the calculation.
+
+Note also that this declaration states that it will return
+a pointer to memory containing an unsigned integer.
+What will happen is that the function will return a pointer
+to the same output array as provided to it as the third argument.
+This will enable the chaining of this function invocation with similar,
+other function invocations.
+
+Now that we have declared the function, let's look at the code.
+First, we have it compute a mask value that represent the
+bit at the highest-possible position of an unsigned long word.
+```
+    unsigned int    carry;
+    /*
+     *    Initialize carry_mask to have its high bit on.
+     */
+    carry = 0;
+    if( ! carry_mask )
+        for( carry_mask = 1; (carry_mask << 1); carry_mask <<= 1 ) ;
+```
+The code above assumes the declaration of a variable outside of the function
+labelled ```carry_mask```.
+We declare that in the same module file as the ```ap_addu``` function.
+```
+static unsigned long    carry_mask = 0;
+```
+Use of the term ```static``` tells the C compiler two things:
+One is that this variable will only be visible within this code module.
+The second is that it will retain its computed value each time
+the ```ap_add_u``` function is invoked.
+
+The code above initializes ```carry_mask``` if it does not yet have
+a value.  It sets it to ```1``` and bits-shifts it to the left by ```1```
+repeatedly, until the action of shifting it to the left would result
+in ```carry_mask``` being set to 0, meaning it has rolled over.
+
+Why do we do this, as opposed to just seeting it to value that we
+would know in advance is always right, for example, by just setting
+it to ```0x80000000```?
+For portability.  The C compiler is not expected to always be in use
+on a 64-bit or 32-bit environment.
+We're going to have it make this calculation the first time this
+function is invoked, and it would never need to do so again.
+
+The we loop around on all of the input numbers:
+```
+    unsigned long   f;
+    while( max_r > 0 ) {
+        f = carry;
+        carry = 0;
+        /*    Computation to produce one output number occurs   */
+        *r = f;
+        r++; max_r--;
+    }
+```
+This says that as long as the variable ```max_r``` has a non-zero value,
+we set the variable ```f``` to the value of ```carry``` (initialized to 0 above),
+and reset ```carry``` to be 0.
+The we perform a computation to produce a new value for ```f```.
+Then we set the current position in the output array to be ```f```,
+increment the output array by 1, and decrement the length of the output array.
+
+For each iteration of this loop, we perform this computation:
+```
+        if( n_s2 == 0 ) {
+            if( n_s1 != 0 ) {
+                if( *s1 & carry_mask ) carry++;
+                f += (*s1 & ~carry_mask);
+                s1++; n_s1--;
+            }
+        } else if( n_s1 == 0 ) {
+            if( *s2 & carry_mask ) carry++;
+            f += (*s2 & ~carry_mask);
+            s2++; n_s2--;
+        } else {
+            if( *s1 & carry_mask ) carry++;
+            if( *s2 & carry_mask ) carry++;
+            f += ((*s1 & ~carry_mask) + (*s2 & ~carry_mask));
+            s1++; s2++; n_s1--; n_s2--;
+        }
+```
+This computation first applies some exceptions, where we accomodate
+the possibility that we have completely applied either or both of the
+input arrays.
+If we have not, it then performs this:
+```
+            if( *s1 & carry_mask ) carry++;
+            if( *s2 & carry_mask ) carry++;
+            f += ((*s1 & ~carry_mask) + (*s2 & ~carry_mask));
+            s1++; s2++; n_s1--; n_s2--;
+```
+If the current position of the either input array has its high bit on,
+the value of ```carry``` is incremented.
+So if the high bit is on for both, ```carry``` will be set to ```2```.
+This it does this:
+```
+            f += ((*s1 & ~carry_mask) + (*s2 & ~carry_mask));
+```
+Note that the variable ```f``` was initialized to left over value of ```carry```
+on each pass through the loop.
+Here it updates the value of ```f``` with the result of adding each
+of the two values at the current position of each input array,
+except for the high bit of each.
+Then the algorithm increments each input pointer,
+and decrements each input length.
+
+Note the prior to performing the calculation above,
+there were two exception conditions accounted for.
+One was if the second array had been completely consumed.
+```
+        if( n_s2 == 0 ) {
+            if( n_s1 != 0 ) {
+                if( *s1 & carry_mask ) carry++;
+                f += (*s1 & ~carry_mask);
+                s1++; n_s1--;
+            }
+       } ...
+```
+If the second array has been completely consumed,
+its current length (stored in ```n_s2```) will be 0.
+The algorithm then checks if the first array still contains values,
+and if it does, it applies the computation only on the value
+from the first array.
+The second exception was if the first array had been completely consumed.
+Note that the algorithm has already determined that the 
+second array has not been completely consumed,
+so it then applies the computation, but on the current value
+of the second array:
+```
+        } else if( n_s1 == 0 ) {
+            if( *s2 & carry_mask ) carry++;
+            f += (*s2 & ~carry_mask);
+            s2++; n_s2--;
+        } else {
+```
+So the entire algorithm forming the loop appears as follows:
+```
+    unsigned long   f;
+    while( max_r > 0 ) {
+        f = carry;
+        carry = 0;
+        if( n_s2 == 0 ) {
+            if( n_s1 != 0 ) {
+                if( *s1 & carry_mask ) carry++;
+                f += (*s1 & ~carry_mask);
+                s1++; n_s1--;
+            }
+        } else if( n_s1 == 0 ) {
+            if( *s2 & carry_mask ) carry++;
+            f += (*s2 & ~carry_mask);
+            s2++; n_s2--;
+        } else {
+            if( *s1 & carry_mask ) carry++;
+            if( *s2 & carry_mask ) carry++;
+            f += ((*s1 & ~carry_mask) + (*s2 & ~carry_mask));
+            s1++; s2++; n_s1--; n_s2--;
+        }
+        if( f  & carry_mask ) carry++;
+        f = (f & ~carry_mask) | ((carry & 1) ? carry_mask : 0);
+        carry >>= 1;
+        *r = f;
+        r++; max_r--;
+    }
+```
