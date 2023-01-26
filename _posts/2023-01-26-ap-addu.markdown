@@ -90,6 +90,7 @@ function is invoked, and it would never need to do so again.
 The we loop around on all of the input numbers:
 ```
     unsigned long   f;
+	unsigned long  *base_r = r;
     while( max_r > 0 ) {
         f = carry;
         carry = 0;
@@ -202,6 +203,7 @@ next iteration of the loop.
 So the entire algorithm forming the loop appears as follows:
 ```
     unsigned long   f;
+	unsigned long  *base_r = r;
     while( max_r > 0 ) {
         f = carry;
         carry = 0;
@@ -228,3 +230,17 @@ So the entire algorithm forming the loop appears as follows:
         r++; max_r--;
     }
 ```
+
+On completion of the loop, we need to verify whether the algoritm
+completed successfully, and then we need to return a value.
+```
+    if( (n_s1 > 0) || (n_s2 > 0) || (carry > 0) ) return NULL;
+    return base_r;
+```
+This code tests whether either of the input arrays are not completely
+consumed, and further checks whether the remaining value of ```carry```
+is not zero, meaning we didn't completely set all of the output values.
+If any of those conditions are true, the function will return a value
+of ```NULL``` to indicate it did not correctly compute a value.
+If every else is OK, the function returns the base value of the
+output array.
