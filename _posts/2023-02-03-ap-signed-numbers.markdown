@@ -8,7 +8,7 @@ categories: Tech
 This is a follow-on discussion of an earlier [post](/tech/2023/01/20/arbitrary-precision.html){:target="_blank"} on
 arbitrary precision arithmetic.
 In the [post](/tech/2023/01/26/ap-addu.markdown){:target="_blank"},
-we looked a C code to add two numbers that were positive,
+we looked at C code to add two numbers that were positive,
 that is, ranging from 0 up to a large value.
 In this post, we examine the use of **signed** integers.
 We continue the use of the C programming language.
@@ -30,7 +30,7 @@ Another approach is to **reserve** one bit of the numeric value
 to **mark** whether a number is negative or positive.
 Which bit to use is somewhat arbitrary,
 but standard practice has become to leverage the highest bit
-as the sign indicagtor.
+as the sign indicator.
 Using any one bit means that the range of values of the number
 is constrained by one bit.
 A 16-bit number may actually only apply 15 of those bits to a number,
@@ -82,9 +82,23 @@ perform an operation called a **two's complement***.
 Two's complement just turns all bits in a register to their opposite values.
 To tell the C compiler to take the two's complement of any number,
 you put a tilde in front of the number (or variable).
+```
+      int
+      negate_pos2neg(int x)
+      {
+          return (~(x - 1));
+      }
+```
 So the algorithm to negate a positive number is subtract 1 from it and then takes its two's complement.
 To negate a negative number, reverse the algorithm,
 that is take its two's complement and then add 1 to the result.
+```
+      int
+      negate_neg2pos(int x)
+      {
+          return ((~x) + 1));
+      }
+```
 
 These mirror algorithms enable one to perform subtraction
 by negating the number you are subtracting by,
@@ -93,8 +107,11 @@ To subtract 374 from 482, add -374 to 482.
 If you are subtracing one number from another,
 and are assuming the result will still be an unsigned value,
 the number you are subtracting by MUST be less than or equal to
-the number you are sbutracting from.
+the number you are subtracting from.
 If the result may be signed, you don't care.
+Addition is **commutative**, meaning it doesn't matter what
+order you apply the numbers in.
+Algebraically, this is noted as ```A + B = B + A```.
 You can even add a negative number to another negative number.
 The result will be an even more negative number.
 
